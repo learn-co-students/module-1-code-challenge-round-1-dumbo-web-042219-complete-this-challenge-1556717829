@@ -17,7 +17,6 @@ class Restaurant
   end
 
   def customers
-    # arr = Review.all.select {|review| review.restaurant == self}
     customers = reviews.map {|review| review.customer}
     customers.uniq
   end
@@ -36,6 +35,5 @@ class Restaurant
   def self.find_by_name(name)
     all.find {|restaurant| restaurant.name == name}
   end
-
-
+  
 end

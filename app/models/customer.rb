@@ -35,8 +35,6 @@ class Customer
   end
 
   def self.find_by_name(name)
-    # split_name = name.split(" ")
-    # all.find {|individual| individual.first_name == split_name[0] && individual.last_name == split_name[1]}
     all.find {|individual| individual.full_name == name}
   end
 
